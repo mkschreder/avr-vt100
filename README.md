@@ -257,7 +257,8 @@ CHARACTER SETS AND LABELS
 
 
 ATTRIBUTES AND FIELDS
-~~~~~~~~~~~~~~~~~~~~
+-------
+
 - (?) [ 0 m		Clear all character attributes
 - (?) [ 1 m		Alternate Intensity ON
 - (?) [ 4 m		Underline ON
@@ -275,7 +276,8 @@ ATTRIBUTES AND FIELDS
 - (?) [ 254 }		Protected = All attributes OFF
 
 CURSOR COMMANDS
-~~~~~~~~~~~~~~
+-------
+
 - (?) [ ? 25 l	Cursor OFF
 - (?) [ ? 25 h	Cursor ON
 - (?) [ ? 50 l	Cursor OFF
@@ -302,7 +304,8 @@ CURSOR COMMANDS
 - (no) [ 3 g		Clear all tabs
 
 EDIT COMMANDS
-~~~~~~~~~~~~
+-------
+
 - (no) [ 4 h		Insert mode selected
 - (no) [ 4 l		Replacement mode selected
 - (no) [ ? 14 h	Immediate operation of ENTER key
@@ -321,6 +324,12 @@ EDIT COMMANDS
 - (yes) [ 2 K		Erase entire line but do not move cursor
 - (no) [ L		Insert 1 line from cursor position
 - (no) [ * L		Insert * lines from cursor position
+
+LICENSE
+-------
+
+- Multilicense: GNU GPL free for all, by default.
+	For anything else, drop me an email. :)
 
  .............................................................................
  : INTERNET: info@fortmax.se :: Tel: 0733-387694 Int: +46-733-387694         :
