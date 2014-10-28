@@ -2,6 +2,8 @@ This is a vt100 emulator written for devices with under 4kb of ram (for example 
 
 Note that because of the small size of the available memory and the slow speed of the microcontroller, it is a little tricky to implement all the escape sequences that are supported in vt100.
 
+![VT100 Emulator Demo](https://raw.githubusercontent.com/mkschreder/avr-vt100/master/vt100_emu.jpg)
+
 Examples
 --------
 
