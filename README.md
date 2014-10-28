@@ -6,6 +6,7 @@ Examples
 --------
 
 * see demo.cpp for code that tests the terminal
+* Note: since vt100 is 80x24 lines, and our terminal only supports 40x40 lines, you need to run "stty cols 40 rows 40" command to tell terminal programs that only 40 columns are available. 
 
 Compiling
 ---------

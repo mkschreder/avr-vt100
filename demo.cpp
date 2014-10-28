@@ -482,7 +482,7 @@ int main(int argc, char **argv){
 	
 	// reset terminal and disable auto wrap
 	vt100_puts("\ec\e[?7l");
-
+/*
 	while(1){
 		test_colors();
 		_delay_ms(5000); 
@@ -492,7 +492,7 @@ int main(int argc, char **argv){
 		_delay_ms(5000);
 		test_scroll();
 		_delay_ms(5000);
-	}
+	}*/
 	/*
 	while(1){
 		
@@ -552,13 +552,23 @@ int main(int argc, char **argv){
 			ili9340_drawChar(x, y, '#');
 		}
 		_delay_ms(2000);
-	}
+	}*/
 	while(1){
 		unsigned int data = uart_getc();
 		if(data == UART_NO_DATA) continue;
+		if(data == 0xb4){ // ´ key on my kb
+			test_colors();
+			_delay_ms(5000); 
+			test_cursor();
+			_delay_ms(5000);
+			test_edit();
+			_delay_ms(5000);
+			test_scroll();
+			_delay_ms(5000);
+		}
 		vt100_putc(data);
 		//uart_putc(data);
-	}*/
+	}
 	
 	return 0; 
 }
