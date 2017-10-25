@@ -178,7 +178,7 @@ void _vt100_scroll(struct vt100 *t, int16_t lines){
 		// scrolling up so clear first line of scroll area
 		//uint16_t y = (t->scroll_start_row + t->scroll_value) * VT100_CHAR_HEIGHT; 
 		//ili9340_fillRect(0, y, VT100_SCREEN_WIDTH, lines * VT100_CHAR_HEIGHT, 0x0000);
-	} else if(lines < 0){
+	} else {
 		_vt100_clearLines(t, t->scroll_end_row - lines, t->scroll_end_row - 1); 
 		// make sure that the value wraps down 
 		t->scroll_value = (scroll_height + t->scroll_value + lines) % scroll_height; 
